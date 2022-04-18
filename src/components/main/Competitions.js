@@ -8,3 +8,7 @@ const Competitions = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [value, setValue] = useState('');
 }
+
+const filterCompetition=competitions.filter(competition => {
+    return competition.name.toLowerCase().includes(value.toLowerCase())
+})

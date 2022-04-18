@@ -7,23 +7,36 @@ function Competition({competitions,firstCompetitionPage,lastCompetitionPage,comp
     const currentCompetitionPage = (competitions.slice(firstCompetitionPage, lastCompetitionPage)).length === 0 ? competitions.slice(0, competitionsPerPage) : competitions.slice(firstCompetitionPage, lastCompetitionPage);
 
     return(
-        <>
-        <Flex flexWrap="wrap" alignItems="center" justifyContent="center">
+        <Flex flexWrap="wrap" alignItems="center" justifyContent="center" >
             {
                 currentCompetitionPage.map((competition,i) => (
-                    <div>
-                        <Link key={i} mr={2} to={`/competitions/${competition.id}/teams`}>
+                    <div style={{
+                        flexShrink:"0",
+                        margin:"0 24px 24px 0",
+                        display:"flex",
+                        position:"relative"
+                    }}>
+                        <Link key={i}  to={`/competitions/${competition.id}/teams`} 
+                            width="100%"
+                            display="block"
+                            textDecoration="none"
+                        >
                             <Button
-                                key={id}
+                                key={i}
                                 display="flex"
                                 alignItems="center"
                                 justifyContent="center"
+                                flexDirection="column-reverse"
                                 p={3}
-                                color='primary'
+                                color='black'
                                 fontWeight="regular"
                                 fontSize="20px"
                                 lineHeight="25px"
-                                width={1/3}
+                                backgroundColor="rgba(51, 51, 77,0.8)"
+                                color="#fff"
+                                cursor="pointer"
+                                width="300px"
+                                height="150px"
                                 >
                                 <p style={{
                                     display:"block",
@@ -41,7 +54,6 @@ function Competition({competitions,firstCompetitionPage,lastCompetitionPage,comp
                 ))
             }
         </Flex>
-        </>
     )
 }
 export default Competition;

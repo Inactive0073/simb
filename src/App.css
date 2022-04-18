@@ -27,12 +27,22 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.page-item{
+  margin-right: 12px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 25px;
+}
+.page-item.active{
+  color:rgb(51, 51, 77);
+}
+.page-link{
+  color: #fff;
 }

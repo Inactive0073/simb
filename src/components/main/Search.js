@@ -10,11 +10,22 @@ function Search({setValue, setCurrentPage}) {
     return(
         <Box
             as="form"
+            style={{
+                width:"200px",
+                position:"relative",
+                marginBottom:"50px"
+            }}
         >
             <Input
             type="search"
             placeholder="Найти"
             onChange={(e) => handleOnchange(e)}
+            style={{
+                color:"#fff",
+                outline: 'none',
+                borderRadius: "4px",
+                boxShadow:"none"
+            }}
             />
         </Box>
     )

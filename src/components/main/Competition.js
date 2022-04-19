@@ -7,7 +7,7 @@ function Competition({competitions,firstCompetitionPage,lastCompetitionPage,comp
     const currentCompetitionPage = (competitions.slice(firstCompetitionPage, lastCompetitionPage)).length === 0 ? competitions.slice(0, competitionsPerPage) : competitions.slice(firstCompetitionPage, lastCompetitionPage);
 
     return(
-        <Flex flexWrap="wrap" alignItems="center" justifyContent="center" >
+        <Flex flexWrap="wrap" alignItems="center" justifyContent="center" marginBottom="auto">
             {
                 currentCompetitionPage.map((competition,i) => (
                     <div style={{
@@ -29,9 +29,9 @@ function Competition({competitions,firstCompetitionPage,lastCompetitionPage,comp
                                 flexDirection="column-reverse"
                                 p={3}
                                 color='black'
-                                fontWeight="regular"
-                                fontSize="20px"
-                                lineHeight="25px"
+                                fontWeight="400"
+                                fontSize="25px"
+                                lineHeight="30px"
                                 backgroundColor="rgba(51, 51, 77,0.8)"
                                 color="#fff"
                                 cursor="pointer"

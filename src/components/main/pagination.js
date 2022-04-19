@@ -102,7 +102,7 @@ const Paginator = ({ perPage, total, currentPage, paginate }) => {
   });
 
   return (
-    <div style={{ 
+    <div style={{
       position: "relative",
       justifyContent:"center"
       }}>

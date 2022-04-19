@@ -1,7 +1,11 @@
 .App {
   text-align: center;
 }
-
+*{
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,12 +31,32 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.page-item{
+  margin-right: 12px;
+  color: #fff;
+}
+button{
+  cursor: pointer;
+}
+.page-link{
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  line-height: 30px;
+  transition: color 0.3s;
+}
+.page-item.active{
+  color:rgb(128,179,255);
+}
+.page-link:hover{
+  color:rgb(128,179,255);
+}
+.visually-hidden{
+  display: none;
 }

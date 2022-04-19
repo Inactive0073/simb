@@ -60,3 +60,20 @@ button{
 .visually-hidden{
   display: none;
 }
+.league{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.competitions{
+  position: relative;
+  padding: 25px 115px;
+}
+@media (max-width:850px){
+  .league{
+  }
+  .competitions{
+    padding: 25px;
+  }
+}

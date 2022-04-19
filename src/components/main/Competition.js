@@ -7,12 +7,12 @@ function Competition({competitions,firstCompetitionPage,lastCompetitionPage,comp
     const currentCompetitionPage = (competitions.slice(firstCompetitionPage, lastCompetitionPage)).length === 0 ? competitions.slice(0, competitionsPerPage) : competitions.slice(firstCompetitionPage, lastCompetitionPage);
 
     return(
-        <Flex flexWrap="wrap" alignItems="center" justifyContent="center" marginBottom="auto">
+        <Flex className="league">
             {
                 currentCompetitionPage.map((competition,i) => (
                     <div style={{
                         flexShrink:"0",
-                        margin:"0 24px 24px 0",
+                        margin:"0 12px 12px 0",
                         display:"flex",
                         position:"relative"
                     }}>
@@ -36,7 +36,7 @@ function Competition({competitions,firstCompetitionPage,lastCompetitionPage,comp
                                 color="#fff"
                                 cursor="pointer"
                                 width="300px"
-                                height="150px"
+                                height="120px"
                                 >
                                 <p style={{
                                     display:"block",

@@ -1,14 +1,7 @@
-.App {
-  text-align: center;
-}
 *{
   color: inherit;
   padding: 0;
   margin: 0;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -34,7 +27,6 @@
 .pagination{
   display: flex;
   list-style: none;
-  align-items: center;
   justify-content: center;
 }
 .page-item{
@@ -71,8 +63,6 @@ button{
   padding: 25px 115px;
 }
 @media (max-width:850px){
-  .league{
-  }
   .competitions{
     padding: 25px;
   }

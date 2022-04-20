@@ -15,7 +15,6 @@ const Competitions = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [value, setValue] = useState('');
 
-
     const filterCompetition = competitions.filter(competition => {
         return competition.name.toLowerCase().includes(value.toLowerCase())
     })
@@ -48,17 +47,16 @@ const Competitions = () => {
         )
     }
     return (
-        <main style={{
-            position: "relative",
-            padding:"25px"
-        }}>
+        <main>
+            <section className="competitions">
             <picture style={{
                 position:"absolute",
                 left:"0",
                 top:"0",
                 filter: "brightness(0.7)",
                 width:"100%",
-                height:"100vh"
+                height:"100%",
+                maxHeight:"100vh"
             }}>
                 <img src={background} alt="" style={{
                     objectFit:"cover",
@@ -78,6 +76,7 @@ const Competitions = () => {
                 total={filterCompetition.length}
                 currentPage={currentPage}
                 paginate={paginate} />
+            </section>
         </main>
     )
 }

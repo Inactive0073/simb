@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/heading/header';
 import Competitions from './components/main/competitions';
 import { BrowserRouter as Router, Routes, Route, Navigate,} from 'react-router-dom';
-import Footer from './components/footer/footer';
+import Footer from './components/foot/footer';
 
 
 function App() {
